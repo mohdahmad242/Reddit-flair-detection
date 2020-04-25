@@ -1,0 +1,29 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container" >
+    <div class ="jumbotron" style="margin-top: 50px;" >
+      <h1 style="text-align: center;">Reddit Flair Detector.</h1>
+      <form action="{{ url_for('home') }}" method="POST" >
+        <div class = "form-group row">
+          <label for="url" >Enter Url </label>
+          <input type="text" id="url" name="url" class ="form-control" required aria-describedby="Help">
+          <small id="Help" class="form-text text-muted">Please place a url from r/india post</small>
+        </div>
+        <input type="submit" class ="btn btn-primary">
+      </form>
+      {% if(result["result"]):%}
+      <div>
+        <p><span style="font-weight: bold;">Title</span> - {{result["title"]}}</p>
+        <p>This post might have <span style="font-weight: bold;">{{result["result"]}}</span> Flair.</p>
+      </div>
+      {% endif %}
+      <div></div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
