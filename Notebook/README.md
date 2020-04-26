@@ -14,6 +14,6 @@
 ![confusion](../WebApp/Screenshot/confusion.png)
 ***
 ## Next Improvement.
-> Implement NLP using Bidirectional RNN.
-> Implement BERT.
+> Implement NLP using Bidirectional RNN.  
+> Implement BERT.  
 Required Large amount of Data.
