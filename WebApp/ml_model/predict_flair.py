@@ -45,7 +45,7 @@ def data_prep(res_url):
     res_data["selftext"] = str(posts.selftext)
     
     count = 0
-    posts.comments.replace_more(limit=5)
+    posts.comments.replace_more(limit=50)
     combined_comments = " "
     for comment in posts.comments:
         combined_comments += " " + comment.body
