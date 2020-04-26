@@ -58,6 +58,8 @@
 - `POST` request on `/automated_testing` returns `JSON` file.  
 
   ``` 
+  > For testing purpose.  
+
       files = {'upload_file': open('file.txt','rb')}
       res = requests.post(url, files=files)
 
