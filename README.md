@@ -13,6 +13,17 @@
     ├── WebApp  
     ├── requirement.txt  
 ```
+## Overview 
+> After traning on multiple algorithm we came to this conclution.  
+> `Random Forest Classifier` has best Accuracy with `Title + Body + Comments` as Input feature.  
+
+| Model | Title | Body | Comments | Title + Body + Comments|
+|-|-|-|-|-|
+|Multinomial Naive Bayes | 64.92|33.27|40.69|69.44|
+|Logistic Regression |68.72|38.16|41.77|79.57|
+| Random Forest|69.26|42.13|42.86|84.27|
+|Support Vector Machine |66.73| 35.26|41.05|74.14|
+> Detailed Analysis [Here](https://github.com/ahmadkhan242/Reddit-flair-detection/blob/master/Notebook/3.%20Flair_Detector.ipynb)
 ## Installation and Execution.
 - Clone the repository using `git clone` and then change the directory to root of the project
 ``` 
@@ -25,7 +36,7 @@
 
 > source ./venv/Scripts/activate 
 
-> pip install -r requirements.txt
+> pip install -r requirement.txt
 ```
 - For Jupyter Notebook
 ```
@@ -42,8 +53,8 @@
 
 
 ## WebApp - [Deployment](https://asdasrfd.herokuapp.com/)
-- `GET` request on `/` render dashboard.html
-- `POST` request with `post url` on `/` render dashboard.html with result.
+- `GET` request on `/` render main.html
+- `POST` request with `post url` on `/` render main.html with result.
 - `POST` request on `/automated_testing` returns `JSON` file.  
 
   ``` 
@@ -53,3 +64,4 @@
       with open('results.json', 'w') as f:
         f.write(res.text)
   ```
+  > Screenshot [Here](https://github.com/ahmadkhan242/Reddit-flair-detection/tree/master/WebApp)
