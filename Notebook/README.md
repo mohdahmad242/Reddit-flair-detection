@@ -10,5 +10,5 @@
 |Support Vector Machine |66.73| 35.26|41.05|74.14|
 ***
 ## Random Forest Classifer.
-![randomAccuracy](Screenshot/randomAccuracy.png)
-![confusion](Screenshot/confusion.png)
+![randomAccuracy](../WebApp/Screenshot/randomAccuracy.png)
+![confusion](../WebApp/Screenshot/confusion.png)
