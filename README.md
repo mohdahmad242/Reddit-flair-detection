@@ -48,22 +48,5 @@
 > cd WebApp
 > flask run
 ```
-> Website Live at `http://127.0.0.1:5000/`.
-
-
-
-## WebApp - [Deployment](https://asdasrfd.herokuapp.com/)
-- `GET` request on `/` render main.html
-- `POST` request with `post url` on `/` render main.html with result.
-- `POST` request on `/automated_testing` returns `JSON` file.  
-
-  ``` 
-  > For testing purpose.  
-
-      files = {'upload_file': open('file.txt','rb')}
-      res = requests.post(url, files=files)
-
-      with open('results.json', 'w') as f:
-        f.write(res.text)
-  ```
-  > Screenshot [Here](https://github.com/ahmadkhan242/Reddit-flair-detection/tree/master/WebApp)
+> Website Live at `http://127.0.0.1:5000/`.  
+> Screenshot [Here](https://github.com/ahmadkhan242/Reddit-flair-detection/tree/master/WebApp)
